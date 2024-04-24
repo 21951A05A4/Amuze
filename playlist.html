@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AMUZE</title>
+</head>
+<body class="playlist">
+    <style>
+      ul{
+    list-style-type: none;
+    width: auto;
+    margin:0 auto;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #e2fefe;
+  }
+  li{
+    float:left;
+    border-right: 2px solid #bbb;
+    text-align: center;
+  }
+  li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 14px;
+    width: 150px;
+    text-decoration: none;
+  }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+      }
+  
+      header {
+        background-color:#e2fefe;
+        color: black;
+        padding: 1em;
+        text-align: center;
+      }
+  
+      nav {
+        background-color:#e2fefe;
+        color: #fff;
+        padding: 0.5em;
+        text-align: center;
+      }
+  
+      section {
+        padding: 20px;
+      }
+      p{
+        text-align: center;
+        padding:100px;
+        text-decoration: solid;
+        font-size: 20px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+      }
+      footer {
+        background-color:#e2fefe;
+        color: black;
+        padding: 1em;
+        text-align: center;
+      }
+  
+      .product {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 10px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+      * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .img{
+    width: fit-content;
+    height: fit-content;
+    
+  }
+  .container {
+      img{
+        position: absolute;
+        top:0;
+        left:0;
+      }
+  }
+  
+  .left-image {
+      float: left; /* Float the image to the left */
+      margin-right: 20px;
+      width: 150px;
+      height: 100px; /* Add some space between the image and the content */
+  }
+  figure.item {
+      /* To correctly align image, regardless of content height: */
+      vertical-align: top;
+      display: inline-block;
+      /* To horizontally center images and caption */
+      text-align: center;
+      /* The width of the container also implies margin around the images. */
+      width: 120px;
+  }
+  img {
+      width: 150px;
+      height: 150px;
+      background-color: grey;
+  }
+  .caption {
+      /* Make the caption a block so it occupies its own line. */
+      display: block;
+  }
+  
+   </style>
+  </head>
+  <body>
+    <img src="C:\Users\manas\Downloads\logosmall.png" alt="Your Image" class="left-image">
+    <br><br><br><br><br><br>
+    <ul>
+      <li><a href="home.html">HOME  &#160</a></li>
+      <li><a href="therapy.html">THERAPY  &#160</a></li>
+      <li><a href="playlist.html">PLAYLISTS  &#160</a></li>
+      <li><a href="shop.html">SHOP  &#160</a></li>
+      <li><a href="create.html">CREATE  &#160</a></li>
+      <li><a href="map.html">MAPSTUDIO </a></li>
+      <li><a href="profile.html">PROFILE </a></li>
+      <li><a href="index.html">LOGOUT </a></li>
+    </ul>
+    
+    <div class="container">
+      <img src="C:\Users\manas\Downloads\logosmall.png" alt="Your Image" class="left-image">
+      <br><br><br>
+  </div>
+  <form action="/search" method="GET">
+    <label for="search">Search:</label>
+    <input type="text" id="search" name="q" placeholder="Search for music">
+    <input type="submit" value="Search">
+</form>
+<br><br>
+  <header>
+    <h1>Play Lists</h1>
+  </header>
+  <figure class="item">
+    <a href="TELUGULIST.html">
+      <img src="C:\Users\manas\Downloads\hinanna.jpeg">
+    </a>
+    <figcaption class="caption">TRENDING</figcaption>
+</figure>
+<figure class="item">
+  <a href="hindilist.html">
+  <img src="C:\Users\manas\Downloads\animal.jpeg">
+</a>
+    <figcaption class="caption">FRESH HITS</figcaption>
+</figure>
+<figure class="item">
+  <a href="hindilist.html"><img src="C:\Users\manas\Downloads\kghk.jpg"></a>
+    <figcaption class="caption">BOLLYWOOD Hits</figcaption>
+</figure>
+<figure class="item">
+  <a href="TELUGULIST.html">
+    <img src="C:\Users\manas\Downloads\90s mcbp.jpeg">
+  </a>
+
+    <figcaption class="caption">TOLLYWOOD</figcaption>
+</figure>
+    <header>
+      <h1>ALBUMS</h1>
+    </header>
+  <figure class="item">
+      <img src="C:\Users\manas\Downloads\hinanna.jpeg">
+      <figcaption class="caption">HI NANNA</figcaption>
+  </figure>
+  <figure class="item">
+    <img src="C:\Users\manas\Downloads\animal.jpeg">
+      <figcaption class="caption">ANIMAL</figcaption>
+  </figure>
+  <figure class="item">
+    <img src="C:\Users\manas\Downloads\kghk.jpg">
+      <figcaption class="caption">Kho Gaye Hum Kahan</figcaption>
+  </figure>
+  <figure class="item">
+    <img src="C:\Users\manas\Downloads\90s mcbp.jpeg">
+      <figcaption class="caption">#90'S Middle Class Biopic</figcaption>
+  </figure>
+  <figure class="item">
+    <img src="C:\Users\manas\Downloads\guntur kaaaram.jpg">
+      <figcaption class="caption">GUNTURU KAARAM</figcaption>
+  </figure>
+  <figure class="item">
+    <img src="C:\Users\manas\Downloads\salaar.jpg">
+      <figcaption class="caption">SALAAR</figcaption>
+  </figure>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <footer>
+        <h4>&copy; 2024 AMUZE. All rights reserved.</h4></footer>
+</body>
+</html>

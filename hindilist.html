@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amuze</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #e2fefe;
+      color: #000;
+      padding: 10px;
+      text-align: center;
+    }
+
+    #song-list {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    .song-title {
+      font-weight: bold;
+    }
+
+    .artist {
+      color: #666;
+    }
+
+    .song-image {
+      max-width: 80px;
+      max-height: 80px;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+
+    .song-details {
+      flex-grow: 1;
+      margin-right: 10px;
+    }
+
+    .duration {
+      color: #888;
+    }
+    h4{
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BOLLYWOOD hits</h1>
+  </header>
+
+  <div id="song-list">
+    <ul>
+      <li onclick="playSong('C:\Users\manas\Downloads\Husn - Anuv Jain_64-(DJPunjab).mp3')">
+        <img class="song-image" src="C:\Users\manas\Downloads\husn.jpg" alt="husn">
+        <div class="song-details">
+          <span class="song-title">Husn</span>
+          <br>
+          <span class="artist">Anuv Jain</span>
+        </div>
+        <audio controls>
+            <source src="C:\Users\manas\Downloads\Husn - Anuv Jain_64-(DJPunjab).mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li onclick="playSong('C:\Users\manas\Downloads\O Maahi Dunki 128 Kbps.mp3')">
+        <img class="song-image" src="C:\Users\manas\Downloads\dunki.jpg" alt="Dunki">
+        <div class="song-details">
+          <span class="song-title">O Maahi</span>
+          <br>
+          <span class="artist">Pritam</span>
+        </div>
+        <audio controls>
+            <source src="C:\Users\manas\Downloads\O Maahi Dunki 128 Kbps.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li onclick="playSong("C:\Users\manas\Downloads\Shikayat(PaglaSongs).mp3')">
+        <img class="song-image" src="C:\Users\manas\Downloads\aur.jpg"alt="aur">
+        <div class="song-details">
+          <span class="song-title">Shikayat</span>
+          <br>
+          <span class="artist">AUR</span>
+        </div>
+        <audio controls>
+            <source src="C:\Users\manas\Downloads\Shikayat(PaglaSongs).mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li onclick="playSong('C:\Users\manas\Downloads\Saajan Ve Darshan Raval 128 Kbps.mp3')">
+        <img class="song-image" src="C:\Users\manas\Downloads\saajan ve.jpg" alt="saajanve">
+        <div class="song-details">
+          <span class="song-title">Saajan Ve</span>
+          <br>
+          <span class="artist">Darshan Raval</span>
+        </div>
+        <audio controls>
+            <source src="C:\Users\manas\Downloads\Saajan Ve Darshan Raval 128 Kbps.mp3"type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+      
+    </ul>
+  </div>
+
+  <script>
+    function playSong(audioFile) {
+      var audio = new Audio(audioFile);
+      audio.play();
+    }
+  </script>
+<footer>
+<h4>&copy; 2024 AMUZE. All rights reserved.</h4></footer>
+</body>
+</html>
